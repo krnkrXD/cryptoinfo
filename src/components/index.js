@@ -5,3 +5,5 @@ export { default as Homepage } from "./Homepage.jsx";
 export { default as Footer } from "./Footer";
 export { default as CryptoDetails } from "./CryptoDetails";
 export { default as Cryptocurrencies } from "./Cryptocurrencies";
+export { default as Signin } from "./Signin";
+export { default as Signup } from "./Signup";

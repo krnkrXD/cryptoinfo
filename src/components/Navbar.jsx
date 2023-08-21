@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu, Typography, Avatar } from "antd";
 import { Link } from 'react-router-dom';
-import { HomeOutlined, BulbOutlined, FundOutlined,MenuOutlined } from '@ant-design/icons';
+import { HomeOutlined, BulbOutlined, FundOutlined, MenuOutlined, CaretLeftOutlined } from '@ant-design/icons';
 import { Dropdown} from 'antd';
 import icon from "../images/icon.png";
 
@@ -9,7 +9,7 @@ const menu = (
     <Menu
       items={[
         {
-          label: <Link to="/">Home</Link>,
+          label: <Link to="/home">Home</Link>,
           key: '0',
         },
         {
@@ -33,18 +33,35 @@ const menu = (
             label: <Link to="/about">About</Link>,
             key: '5',
         },
+        {
+            type: 'divider',
+        },
+        {
+            label: <Link to="/signin">Sign In</Link>,
+            key: '6',
+        },
+        {
+            type: 'divider',
+        },
+        {
+            label: <Link to="/signup">Sign Up</Link>,
+            key: '7',
+            },
       ]}
     />
   );
 
 
-const Navbar = () => {
+const Navbar = ({ isSignin, setSignin }) => {
+    const changeSignin = () => {
+        setSignin(false);
+    }
     return (
         <div className='nav-container'>
             <div className="logo-container">
                 <Avatar src={icon} size="large" />
                 <Typography.Title level={2} className="logo">
-                    <Link to="/">CryptoInfo</Link>
+                    <Link to="/cryptoinfo">CryptoInfo</Link>
                 </Typography.Title>
                 <div className="mobile">
                     <Dropdown overlay={menu} trigger={['click']}>
@@ -56,21 +73,27 @@ const Navbar = () => {
             </div>
             <div className="laptop">
                 <Menu theme="dark">
-                    <Menu.Item icon={<HomeOutlined />}>
-                        <Link to="/">Home</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<FundOutlined />}>
-                        <Link to="/cryptocurrencies">CryptoCurrencies</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<BulbOutlined />}>
-                        <Link to="/news">News</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<FundOutlined />}>
-                        <Link to="/about">About</Link>
-                    </Menu.Item>
+                    {isSignin &&
+                        <>
+                            <Menu.Item icon={<HomeOutlined />}>
+                                <Link to="/home">Home</Link>
+                            </Menu.Item>
+                            <Menu.Item icon={<FundOutlined />}>
+                                <Link to="/cryptocurrencies">CryptoCurrencies</Link>
+                            </Menu.Item>
+                            <Menu.Item icon={<BulbOutlined />}>
+                                <Link to="/news">News</Link>
+                            </Menu.Item>
+                            <Menu.Item icon={<FundOutlined />}>
+                                <Link to="/about">About</Link>
+                            </Menu.Item>
+                            <Menu.Item icon={<CaretLeftOutlined />}>
+                                <Link to="/signin" onClick={changeSignin}>Sign Out</Link>
+                            </Menu.Item>
+                        </>
+                    }
                 </Menu>
-            </div>
-            
+            </div> 
         </div>
     );
 }

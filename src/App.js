@@ -43,7 +43,7 @@ const App = () => {
           <Layout>
             <div className="routes">
               <Routes>
-                <Route path="/home" element={<Homepage isSignin={isSignin}/>} />
+                <Route path="/" element={<Homepage isSignin={isSignin}/>} />
                 <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
                 <Route path="/crypto/:coinId" element={<CryptoDetails />} />
                 <Route path="/news" element={<News />} />

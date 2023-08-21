@@ -28,7 +28,7 @@ const Signin = ({isSignin, setSignin}) => {
                 progress: undefined,
                 theme: "light",
             });
-            navigate("/home")
+            navigate("/")
             console.log(user);
         })
         .catch((error) => {

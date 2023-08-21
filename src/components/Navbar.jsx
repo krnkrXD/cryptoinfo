@@ -61,7 +61,7 @@ const Navbar = ({ isSignin, setSignin }) => {
             <div className="logo-container">
                 <Avatar src={icon} size="large" />
                 <Typography.Title level={2} className="logo">
-                    <Link to="/cryptoinfo">CryptoInfo</Link>
+                    <Link to="/">CryptoInfo</Link>
                 </Typography.Title>
                 <div className="mobile">
                     <Dropdown overlay={menu} trigger={['click']}>
@@ -76,7 +76,7 @@ const Navbar = ({ isSignin, setSignin }) => {
                     {isSignin &&
                         <>
                             <Menu.Item icon={<HomeOutlined />}>
-                                <Link to="/home">Home</Link>
+                                <Link to="/">Home</Link>
                             </Menu.Item>
                             <Menu.Item icon={<FundOutlined />}>
                                 <Link to="/cryptocurrencies">CryptoCurrencies</Link>

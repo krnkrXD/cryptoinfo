@@ -9,8 +9,7 @@ The content is only available after logging in.
    This data will be stored on the firebaseDB.
 3. If you entered your email and password successfully, a pop-up comes out of the success.
 4. All the current information about the cryptocurrencies will be shown i.e. Total Market Cap, Total Cryptocurrencies, Total Market etc.![image](https://github.com/krnkrXD/cryptoinfo/assets/124873800/f06456a5-c595-46cf-bf2a-5f997f68d47f)
-5. At left you will see a navigation bar by which you can navigate on different pages.![image](https://github.com/krnkrXD/cryptoinfo/assets/124873800/82c948dc-e28f-4acd-89b2-bb7f9bc10777)
-
+5. At left you will see a navigation bar by which you can navigate on different pages.
 6. The home page, gives you the brief content that what this app brings for you.
 7. There is a floated button that scrolls the page back to the top.
 8. Click on _cryptocurrencies_ on the nav bar, and you will see all the information about each cryptocurrency. You can search for any particular crypto from the search bar.
@@ -20,7 +19,7 @@ The content is only available after logging in.
 
 Thanks for your time!
 
-**You can install this app by following the below steps :**
+**You can install this app by following the below steps:**
 1. Clone the app on your local repositories.
 2. Open a terminal and run the command `npm install .`. This will install all the dependencies.
 3. After installing, run the command `npm start`. This runs the app in your default web browser.

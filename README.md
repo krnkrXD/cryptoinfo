@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# CryptoInfo - A RealTime Crypto Info App.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Main Features:**
+The content is only available after logging in.
+1. First register as a user.
+   ![image](https://github.com/krnkrXD/cryptoinfo/assets/124873800/5f73899f-98b8-488b-b0a4-bd80288587ee)
+   If already registered, log in to a page.
+   This data will be stored on the firebaseDB.
+3. If you entered your email and password successfully, a pop-up comes out of the success.
+4. All the current information about the cryptocurrencies will be shown i.e. Total Market Cap, Total Cryptocurrencies, Total Market etc.
+5. At left you will see a navigation bar by which you can navigate on different pages.
+6. The home page, gives you the brief content that what this app brings for you.
+7. There is a floated button that scrolls the page back to the top.
+8. Click on _cryptocurrencies_ on the nav bar, and you will see all the information about each cryptocurrency. You can search for any particular crypto from the search bar.
+9. Click on _news_ on the nav bar, and you will see all the current news articles on cryptocurrencies. You can also filter out the articles by entering the name of the cryptocurrency you want to see.
+10. Click on _about_ on the nav bar, this page provides my professional information.
+11. There is an option of sign out, where you can sign out and again navigate to the login page. If you want you can log in again.
 
-## Available Scripts
+Thanks for your time!
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**You can install this app by following the below steps :**
+1. Clone the app on your local repositories.
+2. Open a terminal and run the command `npm install .`. This will install all the dependencies.
+3. After installing, run the command `npm start`. This runs the app in your default web browser.
